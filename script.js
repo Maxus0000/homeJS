@@ -32,6 +32,3 @@ const arrShift = ['js', 'css', 'html'];
 console.log(arrShift.shift());
 
 
-// 6.  Дан массив ['js', 'css', ‘html']. Выведите на экран последний элемент и удалите его.
-
-const arrPop
