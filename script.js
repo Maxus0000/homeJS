@@ -87,16 +87,22 @@ console.log(Object.keys(task));
 
 // 1.Необходимо создать функцию hasElem, которая параметрами будет принимать массив и строку, и возвращать true, если строка есть в массиве, и false - если нет
 
-
+ 
+function hasElem(arr,str){
+  return arr.includes(str)
+}
+console.log(hasElem(['sdfsfsdf'],'sdfsfsdf'));
 
 // 2. Дан массив с числами. Проверьте, что в этом массиве есть указанное число. Если есть - вернуть true, а если нет - вернуть false.
 
-
-
+function hasElem2(arr,num){
+  return arr.includes(num)
+}
+console.log(hasElem2([3,3,5,4],5 ));
 // 3.Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true  [2,2,1], а если нет - вернуть false [1,2,1].
 
 function check(a) {
-  for (var b=1; b<a.length; ++b) {
+  for (let b=1; b<a.length; ++b) {
     if (a[b] === a[b-1]) {
       return true;
     }
@@ -108,8 +114,15 @@ console.log(check([2,2,1]))
 
 // 4. Функция, которая возвращает массив заполненный 10 случайными числами в интервале от 5 до 33. Math.random()
 
-
-
+function mathRan (){
+  const arrMath = [];
+  for (let i = 0; i < 10; i++) {
+   arrMath.push(Math.round(Math.random() * (33 - 5) + 5))
+    
+  }
+  return arrMath;
+}
+console.log(mathRan())
 
 
 
